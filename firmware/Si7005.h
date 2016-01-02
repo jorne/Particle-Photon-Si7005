@@ -6,7 +6,7 @@
  * this stuff is worth it, you can buy me a beer in return.   Jonas Bo Jalling
  * ----------------------------------------------------------------------------
  */
- 
+
 #ifndef SI7005_H
 #define SI7005_H
 
@@ -60,13 +60,13 @@ class Si7005
   void  disableHeater( );
   void  enableFastMeasurements( );
   void  disableFastMeasurements( );
-  
+
  private:
   int _cs_pin;
   int _config_reg;
   float _last_temperature;
   float _last_humidity;
-  int _doMeasurement( byte );
+  int _doMeasurement( unsigned char configValue );
 
 };
 #endif  // SI7005_H

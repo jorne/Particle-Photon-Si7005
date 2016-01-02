@@ -22,7 +22,7 @@ Si7005::Si7005( int pin )
 
 bool Si7005::detectSensor( )
 {
-  byte deviceID;
+  unsigned char deviceID;
 
   digitalWrite( _cs_pin, LOW );								// Enable the sensor
   delay( WAKE_UP_TIME );									// Wait for it to wake up
@@ -35,7 +35,7 @@ bool Si7005::detectSensor( )
   deviceID  = Wire.read( );									// Read the ID from the sensor
 
   digitalWrite( _cs_pin, HIGH );							// Disable the sensor
-  
+
   if ( ( deviceID & ID_SAMPLE ) == ID_SI7005 )
   {
 	return true;
@@ -46,11 +46,11 @@ bool Si7005::detectSensor( )
   }
 }
 
-int Si7005::_doMeasurement( byte configValue )
+int Si7005::_doMeasurement( unsigned char configValue )
 {
   int rawData;
-  byte measurementStatus;
-  
+  unsigned char measurementStatus;
+
   digitalWrite( _cs_pin, LOW );								// Enable the sensor
   delay( WAKE_UP_TIME );									// Wait for it to wake up
 
@@ -76,10 +76,10 @@ int Si7005::_doMeasurement( byte configValue )
   Wire.requestFrom( SI7005_ADR, 2 );						// Read 2 bytes from the sensor
   while ( Wire.available( ) < 2 )							// Wait for data
   {;;}
-  
+
   rawData  = ( Wire.read() << 8 );							// MSB
   rawData |= Wire.read( );									// LSB
-  
+
   digitalWrite( _cs_pin, HIGH );							// Disable the sensor
 
   return rawData;
