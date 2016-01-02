@@ -12,7 +12,7 @@
 
 //#include <inttypes.h>
 
-#include "Arduino.h"
+//#include "Arduino.h"
 
 
 /* Si7005 Registers */
