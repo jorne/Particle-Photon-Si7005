@@ -6,10 +6,10 @@
  * this stuff is worth it, you can buy me a beer in return.   Jonas Bo Jalling
  * ----------------------------------------------------------------------------
  */
-#include "Arduino.h"
+//#include "Arduino.h"
 
 #include "Si7005.h"
-#include <Wire.h>
+//#include <Wire.h>
 
 Si7005::Si7005( int pin )
 {
