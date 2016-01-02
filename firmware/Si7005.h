@@ -10,10 +10,7 @@
 #ifndef SI7005_H
 #define SI7005_H
 
-//#include <inttypes.h>
-
-//#include "Arduino.h"
-
+#include "application.h"
 
 /* Si7005 Registers */
 #define REG_STATUS         0x00
