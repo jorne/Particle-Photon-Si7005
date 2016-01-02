@@ -1,0 +1,7 @@
+{
+    "name": "Si7005",
+    "version": "0.0.6",
+    "author": "Jonas Bo Jalling <jonas@jalling.dk>, modified for Photon by Jorne Roefs <jorneroefs@gmail.com>",
+    "license": "MIT",
+    "description": "Particle Photon library for Si7005 humidity + temperature sensor"
+}
