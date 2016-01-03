@@ -1,6 +1,6 @@
 What ?
 ======
-This is a Arduino library for the Silabs Si7005 temperature/humidity sensor.
+This is a Particle Photon library for the Silabs Si7005 temperature/humidity sensor.
 The library makes it easy to use the sensor and all of its features.
 
 
@@ -12,9 +12,7 @@ any library or sample code on the internet, so i wrote my own.
 
 Getting started
 ===============
-Copy the directory Si7005 to you Arduino library folder.
-
-Load the Arduino IDE and open the example program from the file menu.
+To be published on Particle Build..
 
 The humidity measurement is dependant on the temperature measurement, and uses the last
 measured temperature.
